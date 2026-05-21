@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Jira Automation Addon",
+  "version": "1.0",
+  "description": "Automates subtask assignment, start progress, and resolve transitions in Jira.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.atlassian.net/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
